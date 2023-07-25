@@ -188,7 +188,7 @@ const TripItem = union(enum) {
     // This is a little helper function to print the two different
     // types of item correctly.
     fn printMe(self: TripItem) void {
-        switch (self) {
+        switch (self.p) {
             // Oops! The hermit forgot how to capture the union values
             // in a switch statement. Please capture both values as
             // 'p' so the print statements work!
